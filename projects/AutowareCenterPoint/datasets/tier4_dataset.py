@@ -10,14 +10,11 @@ from mmdet3d.registry import DATASETS
 @DATASETS.register_module()
 class T4Dataset(NuScenesDataset):
     METAINFO = {
-        'classes': ('car', 'truck', 'bus', 'bicycle', 'pedestrian'),
+        'classes': ('car','pedestrian'),
         'version':
         'v1.0-trainval',
         'palette': [
             (255, 158, 0),  # Orange
-            (255, 99, 71),  # Tomato
-            (255, 140, 0),  # Darkorange
-            (255, 127, 80),  # Coral
             (233, 150, 70),  # Darksalmon
         ]
     }

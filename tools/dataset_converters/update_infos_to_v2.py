@@ -406,7 +406,7 @@ def update_tier4_dataset_infos(pkl_path, out_dir):
     data_list = mmengine.load(pkl_path)
 
     METAINFO = {
-        'classes': ('car', 'truck', 'bus', 'bicycle', 'pedestrian'),
+        'classes': ('car','pedestrian'),
     }
 
     print('Start updating:')

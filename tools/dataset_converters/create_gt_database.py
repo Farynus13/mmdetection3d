@@ -205,7 +205,7 @@ def create_groundtruth_database(dataset_class_name,
                 dict(
                     type='LoadPointsFromMultiSweeps',
                     sweeps_num=1,
-                    use_dim=[0, 1, 2, 4],
+                    use_dim=[0, 1, 2, 3, 4],
                     pad_empty_sweeps=True,
                     remove_close=True),
                 dict(
